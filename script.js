@@ -28,6 +28,23 @@ const AddNewAQ=()=>
     aQObj.insertBefore(newNode,aABObj);
 }
 
+const AddNewSkill=()=>
+{
+
+    let newNode=document.createElement('input');
+    newNode.classList.add('form-control');
+    newNode.classList.add('skillField');
+    newNode.classList.add('mt-3');
+    newNode.setAttribute('placeholder','e.g HTML');
+
+
+    let skillObj=document.getElementById('Skill');
+    let sABObj=document.getElementById('skillAddButton');
+   // console.log(sABObj);
+
+    skillObj.insertBefore(newNode,sABObj);
+}
+
 // generate cv
 
 const generateCV=()=>
@@ -82,7 +99,7 @@ const generateCV=()=>
        str=str+`<li>${e.value}</li>`;
        
    }
-   console.log('w'+str);
+  // console.log('w'+str);
    weTObj.innerHTML=str;
    
    // academin qualification
@@ -96,11 +113,39 @@ const generateCV=()=>
    {
        str1=str1+`<li>${e.value}</li>`;
    }
-   console.log('a'+str1);
+   //console.log('a'+str1);
    aqTObj.innerHTML=str1;
    
+   // skill
+
+   let skillObj=document.getElementsByClassName('skillField');
+   let skillTObj=document.getElementById('skillT');
+
+   let str2='';
+
+   for(let e of skillObj)
+   {
+       str2=str2+`<li>${e.value}</li>`;
+   }
+   console.log('a'+str1);
+   skillTObj.innerHTML=str2;
 
 
+
+   //photo
+
+
+   let photoObj=document.getElementById('photoField').files[0];
+   //console.log(photoObj);
+   let photoTObj=document.getElementById('photoT');
+
+   let reader=new FileReader();
+   reader.readAsDataURL(photoObj);
+   
+   reader.onloadend=()=>
+   {
+   photoTObj.src=reader.result;
+   }
 
 }
  // cv download

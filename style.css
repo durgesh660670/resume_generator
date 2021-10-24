@@ -1,10 +1,16 @@
 #cvTemplete{
     display:none ;
 }
-.profile{
-    width: 30%;
+.myimg{
+    width:150px;
+    height:150px !important;
+    border-radius: 50%;
     
 }
 .profileT{
+    background-color: aqua !important;
+}
+.professionalT
+{
     background-color: aqua !important;
 }

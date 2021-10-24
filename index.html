@@ -37,6 +37,12 @@
                     <label for="addressField">Your Address</label>
                     <textarea rows="5" placeholder="Enter address" id="addressField" class="form-control"></textarea>
                 </div>
+                <div class="form-group mt-3">
+                    <label for="photoField">Select your photo</label>
+                    <input type="file" placeholder="choose photo" id="photoField" class="form-control">
+                </div>
+
+
                 <p class="text-secondary mt-3">Important links</p>
 
                 <div class="form-group mt-3">
@@ -63,7 +69,7 @@
                 <h3>Profession details</h1>
                     <div class="form-group mt-3">
                         <label for="Field">Objective</label>
-                      <textarea id='ob'rows="3" placeholder="Enter here" class="form-control"></textarea>
+                        <textarea id='ob' rows="3" placeholder="Enter here" class="form-control"></textarea>
                     </div>
                     <div class="form-group mt-3" id="WE">
                         <label for="Field">Work Experience</label>
@@ -82,7 +88,17 @@
                             <button class="btn btn-primary btn-sm" onclick="AddNewAQ()">Add</button>
                         </div>
                     </div>
+                    <div class="form-group mt-3" id="Skill">
+                        <label for="Field">Skill</label>
+                        <input type="text" placeholder="e.g Project Management" id="Field" class="form-control skillField">
 
+
+                        <!-- new input area -->
+                        <div class="container text-center mt-3" id="skillAddButton">
+                            <button class="btn btn-primary btn-sm" onclick="AddNewSkill()">Add</button>
+                        </div>
+
+                    </div>
 
 
             </div>
@@ -100,7 +116,7 @@
         <div class="row">
             <div class="col-md-4 profileT text-center">
                 <!-- left row -->
-                <img src="img/profile.png" alt="" class='profile m-2'>
+                <img src="img/profile.png" alt="" class='img-fluid myimg m-2' id='photoT'>
                 <h6 id='nameFieldT1'>
                     Durgesh kumar gupta
                 </h6>
@@ -119,19 +135,25 @@
             <div class="col-md-8">
                 <!-- right row     -->
                 <div class='card'>
-                    <div class='card-header objectiveT'>
-                        <h3>Objective:</h3>
+                    <div class='card-header professionalT'>
+                        <h3>Objective</h3>
                     </div>
                     <div class='card-body'>
-                    <p id='obT'>fdui sdiuds sdfsfdiu fdsbuisdds sfdbudsi fsdibsd sdbisib sdbisib
-                        sndsnfds dsfifdsif dsfdfs sfddfsi dfsn
-                        ifdsiosd Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore aliquid reprehenderit modi animi. Culpa assumenda aliquid dolorem magni sit veniam blanditiis iure fugit illo, unde reprehenderit in similique, ipsam vero fugiat ratione nostrum! Laboriosam ad minus fuga modi blanditiis eos. Molestiae fuga delectus mollitia odit veniam obcaecati quis facilis quasi. sdfiodoid sdfdshdfs  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae error distinctio eaque amet! Recusandae, earum dignissimos maxime, ad iure sit et iste pariatur non magnam odit repudiandae fuga asperiores quod.
-                    </p>
+                        <p id='obT'>fdui sdiuds sdfsfdiu fdsbuisdds sfdbudsi fsdibsd sdbisib sdbisib
+                            sndsnfds dsfifdsif dsfdfs sfddfsi dfsn
+                            ifdsiosd Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore aliquid
+                            reprehenderit modi animi. Culpa assumenda aliquid dolorem magni sit veniam blanditiis iure
+                            fugit illo, unde reprehenderit in similique, ipsam vero fugiat ratione nostrum! Laboriosam
+                            ad minus fuga modi blanditiis eos. Molestiae fuga delectus mollitia odit veniam obcaecati
+                            quis facilis quasi. sdfiodoid sdfdshdfs Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Quae error distinctio eaque amet! Recusandae, earum dignissimos maxime, ad iure sit et
+                            iste pariatur non magnam odit repudiandae fuga asperiores quod.
+                        </p>
                     </div>
                 </div>
                 <div class="card mt-3">
 
-                    <div class="card-header profileT">
+                    <div class="card-header professionalT">
                         Work Experience
                     </div>
                     <div class="card-body">
@@ -146,7 +168,7 @@
                 </div>
                 <div class="card mt-3">
 
-                    <div class="card-header profileT">
+                    <div class="card-header professionalT">
                         Academic Qualification
                     </div>
                     <div class="card-body">
@@ -156,6 +178,21 @@
                             <li>softwsrae de</li>
                             <li>softwsrae de</li>
                             <li>softwsrae de</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class='card'>
+                    <div class='card-header professionalT'>
+                        <h3>Skill</h3>
+                    </div>
+                    <div class='card-body'>
+                        <ul id='skillT'>
+                            <li>skill1</li>
+                            <li>skill2</li>
+                            <li>skill3</li>
+                            <li>skill4</li>
+                            
                         </ul>
                     </div>
                 </div>
