@@ -18,7 +18,7 @@
     <div class="container" id="cvDesign">
         <h1 class="text-center my-1">Resume Generator</h1>
 
-        <p class="text-center">By Durgesh</p>
+        <p class="text-center">By Durgesh gupta</p>
 
 
         <div class="row">
@@ -63,7 +63,7 @@
                 <h3>Profession details</h1>
                     <div class="form-group mt-3">
                         <label for="Field">Objective</label>
-                        <textarea rows="3" placeholder="Enter here" class="form-control"></textarea>
+                      <textarea id='ob'rows="3" placeholder="Enter here" class="form-control"></textarea>
                     </div>
                     <div class="form-group mt-3" id="WE">
                         <label for="Field">Work Experience</label>
@@ -75,7 +75,7 @@
                     </div>
                     <div class="form-group mt-3" id="AQ">
                         <label for="Field">Academic Qualification</label>
-                        <textarea rows="4" placeholder="Enter here" class="form-control eqField"
+                        <textarea rows="4" placeholder="Enter here" class="form-control aqField"
                             id="eqAddButton"></textarea>
                         <!-- new text area -->
                         <div class="container text-center mt-3" id="aqAddButton">
@@ -96,9 +96,9 @@
         </div>
     </div>
     <!-- cv templete -->
-    <div class="container" id='cvTemplete'>
+    <div class="container mt-3" id='cvTemplete'>
         <div class="row">
-            <div class="col-md-4 profileT mt-3 text-center">
+            <div class="col-md-4 profileT text-center">
                 <!-- left row -->
                 <img src="img/profile.png" alt="" class='profile m-2'>
                 <h6 id='nameFieldT1'>
@@ -118,47 +118,52 @@
             </div>
             <div class="col-md-8">
                 <!-- right row     -->
-
-                <h3>Objective:</h3>
-                <p>fdui sdiuds sdfsfdiu fdsbuisdds sfdbudsi fsdibsd sdbisib sdbisib
-                    sndsnfds dsfifdsif dsfdfs sfddfsi dfsn
-                    ifdsiosd sdfiodoid sdfdshdfs sdnfsdn
-                </p>
-                <div class="card ">
-
-                    <div class="card-header profileT">
-                    Work Experience
+                <div class='card'>
+                    <div class='card-header objectiveT'>
+                        <h3>Objective:</h3>
                     </div>
-                    <div class="card-body">
-                     <ul>
-                         <li>softwsrae de</li>
-                         <li>softwsrae de</li>
-                         <li>softwsrae de</li>
-                         <li>softwsrae de</li>
-                         <li>softwsrae de</li>
-                     </ul>
+                    <div class='card-body'>
+                    <p id='obT'>fdui sdiuds sdfsfdiu fdsbuisdds sfdbudsi fsdibsd sdbisib sdbisib
+                        sndsnfds dsfifdsif dsfdfs sfddfsi dfsn
+                        ifdsiosd Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore aliquid reprehenderit modi animi. Culpa assumenda aliquid dolorem magni sit veniam blanditiis iure fugit illo, unde reprehenderit in similique, ipsam vero fugiat ratione nostrum! Laboriosam ad minus fuga modi blanditiis eos. Molestiae fuga delectus mollitia odit veniam obcaecati quis facilis quasi. sdfiodoid sdfdshdfs  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae error distinctio eaque amet! Recusandae, earum dignissimos maxime, ad iure sit et iste pariatur non magnam odit repudiandae fuga asperiores quod.
+                    </p>
                     </div>
                 </div>
                 <div class="card mt-3">
 
                     <div class="card-header profileT">
-                    Academic Qualification
+                        Work Experience
                     </div>
                     <div class="card-body">
-                     <ul>
-                         <li>softwsrae de</li>
-                         <li>softwsrae de</li>
-                         <li>softwsrae de</li>
-                         <li>softwsrae de</li>
-                         <li>softwsrae de</li>
-                     </ul>
+                        <ul id='weT'>
+                            <li>softwsrae de</li>
+                            <li>softwsrae de</li>
+                            <li>softwsrae de</li>
+                            <li>softwsrae de</li>
+                            <li>softwsrae de</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card mt-3">
+
+                    <div class="card-header profileT">
+                        Academic Qualification
+                    </div>
+                    <div class="card-body">
+                        <ul id='aqT'>
+                            <li>softwsrae de</li>
+                            <li>softwsrae de</li>
+                            <li>softwsrae de</li>
+                            <li>softwsrae de</li>
+                            <li>softwsrae de</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="container mt-3 text-center">
-            <button class="btn btn-primary btn-lg">
+            <button class="btn btn-primary btn-lg" onclick="downloadCV()">
                 Download CV
             </button>
         </div>
